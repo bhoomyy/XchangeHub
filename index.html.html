@@ -1,0 +1,46 @@
+<!DOCKTYPE html>
+<html>
+    <title>Currency Converter</title>
+    <body>
+        <link rel="stylesheet" href="Xchange.css">
+        <script src="bhoomi.js"></script>
+        <div class="parent-container">
+            <div class="child-container" id="title">The Xchange Hub</div><br><br>
+            <div class="child-container" id="description">Instant currency conversion with real-time rates!</div>
+        </div>
+        <div class="parent-container2">
+            <div id="left">
+                <div id="description2">Incase the free API requests are exhausted:<br><br>1. Click <a href="https://www.exchangerate-api.com/" target="_blank" id="link">here</a><br><br>2. Get a new API-key<br><br>3. Entre the new API-key<br><br></div>
+                <input type="text" id="inputapikey" placeholder="Insert new API-key ..." value="9a2f6333ab0d91492f824bae">
+            </div>
+            <div id="right">
+                <div id="heading1">Seamless Global Currency Xchange</div>
+                <div id="from">From:</div>
+                <div id="to">To:</div>
+                <input type="text" id="t1" placeholder="Base currency type (e.g. USD)" >
+                <input type="text" id="t2" placeholder="Target currency type (e.g. INR)" ><br><br>
+                <input type="number" min=0 step="0.0001" id="amt" placeholder="Amount (e.g.100)" >
+                <div id="result"></div>
+                <button onclick="collectData()" id="convertnow" >Convert Now</button>    
+            </div>
+        </div>
+        <div class="parent-container3">
+            <div id="title2">About this website :</div>
+            <div id="description3">This website is a smart API-based currency converter with live rates and can give you the top 3 profit-maximizing exchange options.</div>
+        </div>
+        <div class="parent-container4">
+            <div id="heading2">Xchange for Gains</div>
+            <div id="description4">Discover the top 3 ways to convert your money for maximum profit</div>
+            <div id="bestway1"></div>
+            <div id="bestway2"></div>
+            <div id="bestway3"></div>
+            <button onclick="bestways()" id="shownow">Show now</button>    
+            <div id="timestamp">(this might take about 30sec)</div>
+        </div>
+        <div class="parent-container5">
+            <div id="heading3">Trivia!</div>
+            <div id="description5">Did you know that you could actually make money just by exchanging currencies??? This is done through something called Currency Exchange Arbitrage, which basically takes advantage of discrepancies in the exchange rates of different currencies.There are good ways and bad ways of converting a currency from one form to another but this website could be used to show you the three best ways to convert the base currency to the target currency.</div>
+        </div>
+        <div id="ending">Thank you!</div>
+    </body>
+</html>
